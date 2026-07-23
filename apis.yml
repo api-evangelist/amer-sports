@@ -1,8 +1,6 @@
 aid: amer-sports
 name: Amer Sports
-description: 'Amer Sports is a company surfaced as a portfolio company of hongshan and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Amer Sports is a global group of premium sports and outdoor brands with Nordic roots and more than 75 years of history, employing roughly 15,400 people and selling products in over 100 countries. Its portfolio spans ten brands including Arc''teryx, Salomon, Wilson, Peak Performance, Atomic, Armada, ATEC, DeMarini, EvoShield and Louisville Slugger, covering technical apparel, footwear, winter sports, racquet sports and ball sports equipment. Amer Sports was added to the API Evangelist network as a portfolio company of Hongshan (formerly Sequoia Capital China). As a consumer sports and outdoor manufacturer it publishes a corporate and investor web presence and a security.txt contact, but no public developer portal, API documentation, or machine-readable API specification was found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/amer-sports/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +8,30 @@ x-backed-by:
 - hongshan
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
+image: https://amersports.com/favicon.ico
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
 - Consumer
+- Sports
+- Outdoor
+- Apparel
+- Footwear
+- Sporting Goods
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +41,26 @@ maintainers:
 common:
 - type: Website
   url: https://amersports.com
+- type: PrivacyPolicy
+  url: https://amersports.com/privacy-policy
+- type: TermsOfService
+  url: https://amersports.com/site-terms
+- type: Support
+  url: https://amersports.com/contacts
+- type: Blog
+  url: https://amersports.com/newsroom
+- type: SecurityTxt
+  url: well-known/amer-sports-security.txt
+- type: WellKnown
+  url: well-known/amer-sports-well-known.yml
+- type: DomainSecurity
+  url: security/amer-sports-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/amer-sports-vulnerability-disclosure.yml
+- type: Security
+  url: https://amersports.com/.well-known/security.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
