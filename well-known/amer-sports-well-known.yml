@@ -2,19 +2,26 @@ generated: '2026-07-17'
 method: searched
 source: live probes of https://amersports.com/.well-known/*
 host: https://amersports.com
-documents:
-- path: /.well-known/security.txt
-  status: 200
-  file: amer-sports-security.txt
-- path: /.well-known/openid-configuration
-  status: 301
-  note: redirects to site homepage; no discovery document
-- path: /.well-known/oauth-authorization-server
-  status: 301
-  note: redirects to site homepage; no discovery document
-- path: /.well-known/api-catalog
-  status: 301
-  note: redirects to site homepage; no discovery document
-- path: /.well-known/ai-plugin.json
-  status: 301
-  note: redirects to site homepage; no discovery document
+hosts:
+- host: https://amersports.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: amer-sports-security.txt
+  - path: /.well-known/openid-configuration
+    status: 301
+    note: redirects to site homepage; no discovery document
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    note: redirects to site homepage; no discovery document
+  - path: /.well-known/api-catalog
+    status: 301
+    note: redirects to site homepage; no discovery document
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    note: redirects to site homepage; no discovery document
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
